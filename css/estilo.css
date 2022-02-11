@@ -1,0 +1,79 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 15px; }
+
+.serviciosFlex, .footer, h3, .nav li, .nav li a {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black; }
+
+body {
+  height: 100vh; }
+
+.logo {
+  margin-top: 35px; }
+
+.imgMain {
+  width: 100%;
+  margin-bottom: 45px; }
+
+.divServicios {
+  width: 100%; }
+
+.serviciosFlex {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: solid 1px black; }
+  .serviciosFlex .servicios {
+    margin-top: 40px;
+    margin-bottom: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px; }
+
+.footer {
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "footer1 footer2";
+  height: 200px;
+  margin-top: 20px; }
+  .footer .footer1 {
+    margin-left: 20px;
+    border-top: solid 2px white;
+    padding-top: 25px;
+    grid-area: footer1; }
+    .footer .footer1 .tituloFooter {
+      display: inline; }
+    .footer .footer1 .logoIng {
+      width: 40px;
+      height: 40px; }
+    .footer .footer1 .copyright {
+      margin-top: 48px; }
+  .footer .footer2 {
+    border-top: solid 2px white;
+    padding-top: 25px;
+    margin-right: 20px;
+    grid-area: footer2; }
+
+h3 {
+  color: white;
+  padding: 8px;
+  text-align: left;
+  font-size: 18px; }
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: solid black 1px;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px; }
+  .nav li {
+    margin-top: 15px;
+    margin-bottom: 50px; }
+    .nav li a:hover {
+      font-weight: bold;
+      color: black; }
