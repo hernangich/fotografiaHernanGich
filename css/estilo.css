@@ -83,6 +83,9 @@ h3 {
   font-size: 18px; }
 
 /* Main Portoflio */
+.mainPortfolio {
+  display: flex; }
+
 .img1 {
   width: 50%;
   margin-left: 20px;
