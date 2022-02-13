@@ -11,11 +11,9 @@
 body {
   height: 100vh; }
 
-/* Header */
 .logo {
   margin-top: 35px; }
 
-/* Nav */
 .nav {
   display: flex;
   justify-content: space-evenly;
@@ -30,7 +28,6 @@ body {
       font-weight: bold;
       color: black; }
 
-/* Main */
 .imgMain {
   width: 100%;
   margin-bottom: 45px; }
@@ -49,7 +46,6 @@ body {
     font-weight: bold;
     font-size: 20px; }
 
-/* Footer */
 .footer {
   background-color: black;
   display: grid;
@@ -82,7 +78,6 @@ h3 {
   text-align: left;
   font-size: 18px; }
 
-/* Main Portoflio */
 .tituloPortfolio {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
