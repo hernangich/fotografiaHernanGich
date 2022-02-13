@@ -83,40 +83,18 @@ h3 {
   font-size: 18px; }
 
 /* Main Portoflio */
-.mainPortfolio {
-  display: flex; }
-
-.img1 {
-  width: 50%;
-  margin-left: 20px;
-  margin-top: 20px; }
-
-main .naturaleza {
-  width: 50%;
-  margin: 20px;
-  margin-right: 100px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 50px; }
-
-main .animales {
-  width: 50%;
-  margin: 20px;
-  margin-right: 100px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 50px; }
-
-main .producciones {
-  width: 50%;
-  margin: 20px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 50px; }
-
-h2 {
+.tituloPortfolio {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: black;
   font-weight: bold; }
+
+.imgPortfolio {
+  padding-bottom: 25px;
+  padding-top: 15px; }
