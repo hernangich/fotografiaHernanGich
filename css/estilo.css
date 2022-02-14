@@ -84,7 +84,8 @@ h3 {
   text-align: center;
   align-self: center;
   text-decoration: none;
-  color: black; }
+  color: black;
+  border: solid black 2px; }
 
 a:hover {
   color: black;
@@ -93,3 +94,49 @@ a:hover {
 .imgPortfolio {
   padding-bottom: 25px;
   padding-top: 15px; }
+
+.mainSobremi {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "imgSobremi tituloSobremi tituloSobremi" "imgSobremi subtituloSobremi subtituloSobremi" "imgSobremi textoSobremi1 textoSobremi2";
+  margin-bottom: 100px; }
+  .mainSobremi .imgSobremi {
+    grid-area: imgSobremi;
+    margin-left: 80px; }
+    .mainSobremi .imgSobremi .imgSobremi2 {
+      width: 60%; }
+  .mainSobremi .tituloSobremi {
+    grid-area: tituloSobremi;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 50px;
+    margin-top: 200px;
+    text-align: start;
+    align-self: center;
+    border-top: solid black 2px;
+    padding-top: 15px; }
+  .mainSobremi .subtituloSobremi {
+    grid-area: subtituloSobremi;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
+    text-align: start;
+    align-self: center;
+    border-top: solid black 2px;
+    padding-top: 15px; }
+  .mainSobremi .textoSobremi1 {
+    grid-area: textoSobremi1;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 50px;
+    text-align: start;
+    align-self: center;
+    border-top: solid black 2px;
+    padding-top: 15px; }
+  .mainSobremi .textoSobremi2 {
+    grid-area: textoSobremi2;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 50px;
+    text-align: start;
+    align-self: center;
+    border-top: solid black 2px;
+    padding-top: 15px; }
