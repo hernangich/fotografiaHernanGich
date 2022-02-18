@@ -129,4 +129,57 @@ a:hover {
     padding-top: 20px;    
     }
 }
+        // Main Contacto
+.mainForm {
+    display: flex;
+    margin: 70px auto;
+    h1 {
+        color: black;
+        font-family:'Roboto Condensed', sans-serif;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    h2 {
+    color: black;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;        
+    }
+    .form {
+        margin: auto;
+        background-color: white;
+        max-width: 390px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px black;
+        text-align: center;
+    }
+    .formContainer {
+        margin-top: 3em;
+        display: grid;
+        gap: 8px;
+        .formGroup {
+            position: relative;
+            .formInput {
+                width: 100%;
+                padding: 6px 3px;
+                border: none;
+                outline: none;
+                border-bottom: solid 1px black;
+                font-family:'Roboto Condensed', sans-serif;
+            }
+        }
+        .mensajeBottom {
+            margin-bottom: 75px;
+        }
+        .formEnviar {
+            background-color: black;
+            color: white;
+            font-family:'Roboto Condensed', sans-serif;
+            border-radius: 20px;
+            border: none;
+            padding: 5px 0;
+        }
+    }
+}
 
