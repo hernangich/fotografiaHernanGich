@@ -1,0 +1,132 @@
+@import "base/variables";
+@import "base/extends";
+@import "base/operaciones";
+@import "base/mixins";
+@import "base/maps";
+
+body {
+    height: 100vh;
+}
+        // Header
+.logo {
+    margin-top: 35px;
+}
+        // Nav
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: solid black 1px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    li {
+        @extend %lista;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        a {
+            @extend %lista;
+        }
+        a:hover {
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+        // Main
+.imgMain {
+    width: 100%;
+    @include margin-t(45px);
+}
+.divServicios {
+    width: 100%;
+}
+.serviciosFlex {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: solid 1px black;
+    @extend %lista;
+    .servicios {
+        @include margin-t(200px);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: bold;
+        font-size: map-get($map: $chica, $key:font-size-chica);
+    }
+}
+        // Footer 
+.footer {
+    background-color: $color-fondo;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "footer1 footer2";
+    height: 200px;
+    @extend %borde;
+    @extend %lista;
+    margin-top: 20px;
+    .footer1 {
+        margin-left: 20px;
+        border-top: solid 2px white;
+        padding-top: 25px;
+        grid-area: footer1;
+        .tituloFooter {
+            display: inline;
+        }
+        .logoIng {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .footer2 {
+        border-top: solid 2px white;
+        padding-top: 25px;
+        margin-right: 20px;
+        grid-area: footer2;
+    }
+}
+h3 {
+    color: white;
+    padding: 6px;
+    text-align:left;
+    @extend %lista;
+    font-size: $font-size - 32px;
+}
+        // Main Portoflio
+.tituloPortfolio {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: map-get($map: $grande, $key:font-size-grande);
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    border: solid black 2px;
+}
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+.imgPortfolio {
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+        // Main Sobre mí
+.mainSobremi {
+    margin-bottom: 50px;
+    .tituloSobremi {
+        border-top: solid black 1px;
+        margin-top: 15px;
+        padding-top: 20px; 
+    }
+    .subtituloSobremi {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .textoSobremi1 {
+    border-top: solid black 1px;
+    padding-top: 20px;  
+    }
+    .textoSobremi2 {
+    border-top: solid black 1px;
+    padding-top: 20px;    
+    }
+}
+
