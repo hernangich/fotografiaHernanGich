@@ -84,7 +84,9 @@ h3 {
   align-self: center;
   text-decoration: none;
   color: black;
-  border: solid black 2px; }
+  border: none;
+  box-shadow: 0 5px 10px;
+  border-radius: 10px; }
 
 a:hover {
   color: black;
@@ -153,3 +155,80 @@ a:hover {
       border-radius: 20px;
       border: none;
       padding: 5px 0; }
+
+.mainServicios {
+  margin-top: 40px;
+  margin-bottom: 200px; }
+  .mainServicios .flexServicios {
+    display: flex;
+    justify-content: space-evenly; }
+    .mainServicios .flexServicios .evento {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mainServicios .flexServicios .evento a {
+        font-size: 26px;
+        padding-top: 12px; }
+      .mainServicios .flexServicios .evento .imgEvento {
+        width: 50px; }
+      .mainServicios .flexServicios .evento p {
+        font-size: 16px;
+        padding: 8px;
+        font-weight: lighter; }
+    .mainServicios .flexServicios .book {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mainServicios .flexServicios .book a {
+        font-size: 26px;
+        padding-top: 12px; }
+      .mainServicios .flexServicios .book .imgBook {
+        width: 50px; }
+      .mainServicios .flexServicios .book p {
+        font-size: 16px;
+        padding: 8px;
+        font-weight: lighter; }
+    .mainServicios .flexServicios .redesSociales {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .mainServicios .flexServicios .redesSociales a {
+        font-size: 26px;
+        padding-top: 12px; }
+      .mainServicios .flexServicios .redesSociales .imgSocial {
+        width: 50px; }
+      .mainServicios .flexServicios .redesSociales p {
+        font-size: 16px;
+        padding: 8px;
+        font-weight: lighter; }
+  .mainServicios .evento, .mainServicios .book, .mainServicios .redesSociales {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    padding: 8px;
+    border: none;
+    box-shadow: 0 5px 10px;
+    border-radius: 10px; }
+  .mainServicios .imgServicios {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px; }
+
+@media only screen and (max-width: 390px) {
+  .flexServicios {
+    flex-direction: column;
+    align-items: center; }
+    .flexServicios .book, .flexServicios .redesSociales {
+      margin-top: 50px; } }
+
+@media only screen and (max-width: 768px) {
+  .flexServicios {
+    flex-direction: column;
+    align-items: center; }
+    .flexServicios .book, .flexServicios .redesSociales {
+      margin-top: 50px; } }
