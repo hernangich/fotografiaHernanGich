@@ -232,3 +232,24 @@ a:hover {
     align-items: center; }
     .flexServicios .book, .flexServicios .redesSociales {
       margin-top: 50px; } }
+
+.tituloGaleria {
+  text-shadow: 1px 2px 2px gray;
+  text-align: center;
+  margin: 2rem auto; }
+
+.galeria {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 25px; }
+  .galeria .foto {
+    display: flex;
+    justify-content: center; }
+    .galeria .foto .imgNat {
+      border-radius: 3px; }
+
+.foto:hover {
+  transform: rotate(-5deg); }
